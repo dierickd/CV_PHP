@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
+
+:root {
+    --color_main: #24BDDF;
+    --color_dark: #262B37;
+    --color_light: #F5F2F2;
+
+    --font_family: 'Prompt';
+
+    --font_main: 14px;
+    --font_M: 18px;
+    --font_L: 24px;
+    --font_XL: 48px;
+    --font_XXL: 64px;
+
+    --opacity_light: 50%;
+    --opacity_strong: 75%;
+
+    --letter_spacing: 10%;
+}

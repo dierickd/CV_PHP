@@ -1,0 +1,37 @@
+#sticky {
+    position: sticky;
+    top: 0;
+    box-shadow: var(--shadow) var(--color_dark_hover);
+}
+.nav-bar {
+    padding-left: 50px;
+    padding-right: 50px;
+    background: var(--color_dark);
+}
+.nav-bar .links {
+    display: flex;
+    justify-content: center;
+}
+.nav-bar .nav-link {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 75px;
+    color: var(--color_light);
+}
+.nav-bar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav-bar ul li {
+    list-style-type: none;
+}
+.nav-bar .btn-mobile {
+    display: none;
+}
+
+.nav-bar .nav-link:hover {
+    background: var(--color_dark_hover);
+}

@@ -5,6 +5,9 @@
     --color_dark: rgb(38, 43, 55);
     --color_light: rgba(245, 242, 242, .8);
 
+    --color_dark_hover: rgb(52, 57, 69);
+    --shadow: 0 0 3px;
+
     --font_family: 'Prompt';
 
     --font_main: 14px;

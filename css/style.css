@@ -1,8 +1,24 @@
 @import url('root.css');
+@import url('header.css');
 
+/*
+General declaration
+ */
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: var(--font_family);
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
 }

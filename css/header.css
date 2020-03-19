@@ -1,0 +1,71 @@
+header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background:
+            linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)),
+            center top / cover url("../img/background_header.jpg") fixed;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.name_presentation {
+    color: var(--color_light);
+    border: 2px solid var(--color_light);
+    text-align: center;
+    padding: 1rem 5rem;
+    border-radius: var(--radius);
+    background-color: rgba(38, 43, 55, .3);
+}
+.name_presentation h1 {
+    margin: 0;
+    letter-spacing: var(--letter_spacing);
+    font-size: var(--font_XXL);
+}
+.name_presentation span {
+    display: block;
+    font-size: var(--font_L);
+}
+header .mouse {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    bottom: 100px;
+    color: var(--color_light);
+    border: 1px solid var(--color_light);
+    width: 50px;
+    height: 75px;
+    border-radius: 40% 40% 25% 25%;
+}
+header .mouse::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background: var(--color_light);
+}
+header .mouse .fas {
+    transform: translateY(-400%);
+    margin-bottom: -8px;
+    animation: 2s linear .5s infinite callToScroll;
+}
+header .scroll {
+    position: absolute;
+    bottom: 50px;
+    color: var(--color_light);
+}
+@keyframes callToScroll {
+    0% {
+        transform: translateY(-400%);
+    }
+    10% {
+        transform: translateY(-320%);
+    }
+    100% {
+        transform: translateY(300%);
+    }
+}

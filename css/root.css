@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,400i,700&display=swap');
 
 :root {
-    --color_main: #24BDDF;
-    --color_dark: #262B37;
-    --color_light: #F5F2F2;
+    --color_main: rgb(36, 189, 223);
+    --color_dark: rgb(38, 43, 55);
+    --color_light: rgba(245, 242, 242, .8);
 
     --font_family: 'Prompt';
 
@@ -16,5 +16,6 @@
     --opacity_light: 50%;
     --opacity_strong: 75%;
 
-    --letter_spacing: 10%;
+    --letter_spacing: .25rem;
+    --radius: 3px;
 }

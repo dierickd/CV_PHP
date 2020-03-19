@@ -28,10 +28,47 @@
 .nav-bar ul li {
     list-style-type: none;
 }
-.nav-bar .btn-mobile {
+.nav-bar .menu-mobile {
     display: none;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color_light);
+    font-size: var(--font_L);
+}
+.nav-bar .menu-mobile a {
+    cursor: pointer;
+}
+.nav-bar .btn-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-bar .nav-link:hover {
     background: var(--color_dark_hover);
+}
+
+
+@media screen and (max-width: 960px) {
+    .nav-bar {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .nav-bar .links {
+        display: none;
+    }
+    .nav-bar .menu-mobile {
+        position: relative;
+        display: flex;
+        line-height: 75px;
+    }
+    .nav-bar .links:target {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 }

@@ -58,7 +58,7 @@ header .mouse::before {
 }
 header .mouse .fas {
     transform: translateY(-400%);
-    margin-bottom: -8px;
+    margin-bottom: -7px;
     animation: 2s linear .5s infinite callToScroll;
 }
 header .scroll {

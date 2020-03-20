@@ -1,6 +1,8 @@
 @import url('root.css');
 @import url('header.css');
 @import url('navbar.css');
+@import url('about.css');
+@import url('skills.css');
 
 /*
 General declaration
@@ -10,6 +12,7 @@ html {
 }
 body {
     font-family: var(--font_family);
+    background: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -22,4 +25,38 @@ a {
 }
 img {
     width: 100%;
+}
+
+/*
+Custom title Section
+ */
+.title_section {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--font_XL);
+    letter-spacing: var(--letter_spacing);
+}
+.title_section::before {
+    letter-spacing: var(--letter_spacing);
+    position: absolute;
+    font-size: var(--font_XXL);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -35px;
+    z-index: -1;
+    color: var(--color_pseudo);
+}
+
+@media screen and (max-width: 700px) {
+    .title_section {
+        font-size: var(--font_L);
+    }
+    .title_section::before {
+        font-size: 36px;
+        top: -20px;
+    }
+    .section {
+        padding: var(--padding-light);
+    }
 }

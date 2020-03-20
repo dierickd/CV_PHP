@@ -1,0 +1,30 @@
+.skills {
+    padding: var(--padding-XL);
+}
+.skills .title_section::before {
+    content: 'Compétences';
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills .card {
+    width: 130px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding-bottom: var(--padding-light);
+}
+
+@media screen and (max-width: 700px) {
+    .skills .cards {
+        justify-content: space-around;
+        padding-top: var(--padding-XL);
+        padding-bottom: var(--padding-XL);
+    }
+    .skills .card {
+        width: calc(100% / 2 - 30px);
+        margin: 0;
+    }
+}

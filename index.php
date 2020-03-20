@@ -1,4 +1,5 @@
 <?php
+include 'functions/functions.php';
 ?>
 
 <!doctype html>
@@ -18,10 +19,10 @@
 ?>
 <main class="main">
     <?php
-    include "template/about.php";
-    include "template/skills.php";
-    include "template/portfolio.php";
-    include "template/training.php";
+    include 'template/about.php';
+    include 'template/skills.php';
+    include 'template/portfolio.php';
+    include 'template/training.php';
     ?>
 </main>
 <?php

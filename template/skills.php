@@ -1,7 +1,7 @@
 <?php
 ?>
 <section class="skills section" id="skills">
-    <h1 class="title_section">compétences</h1>
+    <h2 class="title_section">compétences</h2>
     <div class="cards">
         <?= cardSkills('https://icongr.am/devicon/html5-original.svg','HTML5'); ?>
         <?= cardSkills('https://icongr.am/devicon/css3-original.svg','CSS3'); ?>

@@ -1,5 +1,6 @@
 <?php
 include 'functions/functions.php';
+include 'functions/datas.php';
 ?>
 
 <!doctype html>

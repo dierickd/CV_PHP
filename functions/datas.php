@@ -3,7 +3,7 @@ $projects = [
     [
         'file' => 'clonw.jpg',
         'name' => 'Wild circus',
-        'link' => 'https://dierick-dewi.fr/Projet_1/',
+        'link' => 'https://dierick-dewi.fr/Wild-Circus/',
         'techno' => 'HTML CSS JS'
     ],
     [

@@ -13,6 +13,7 @@ function portfolio(string $link, string $name, string $file, string $techno):str
     return '<div class="card-project">
                     <img class="card-project-img" src="../img/' . $file . '" alt="' . $name . '">
                     <div class="card-project-footer">
+                        <span class="name-site">' . $name . '</span>
                         <span>' . $techno . '</span>
                         <a href="' . $link . '" target="_blank">Voir le site</a>
                     </div>

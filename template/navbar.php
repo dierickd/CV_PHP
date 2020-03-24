@@ -7,7 +7,7 @@
     </div>
     <ul class="links" id="links">
         <li><a href="#about" class="nav-link" title="section qui suis-je">Qui suis-je</a></li>
-        <li><a href="#experience" class="nav-link" title="section expérience">Experiences</a></li>
+        <li><a href="#experiences" class="nav-link" title="section expérience">Experiences</a></li>
         <li><a href="#skills" class="nav-link" title="section compétences">Compétences</a></li>
         <li><a href="#portfolio" class="nav-link" title="section portfolio">Réalisations</a></li>
         <li><a href="#training" class="nav-link" title="section formations">Formations</a></li>

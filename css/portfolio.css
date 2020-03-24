@@ -98,3 +98,8 @@
         letter-spacing: calc(var(--letter_spacing) / 1.5);
     }
 }
+@media screen and (max-width: 700px) {
+    .portfolio .card-project {
+        width: 100%;
+    }
+}

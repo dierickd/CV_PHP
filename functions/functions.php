@@ -23,3 +23,30 @@ function portfolio(string $link, string $name, string $file, string $techno):str
                 </a>
             </div>';
 }
+
+function cardRectangleWithRound(array $data):string
+{
+    setlocale(LC_TIME,'fr_FR');
+    $startDate = strftime("%B %G", strtotime($data['start_at']));
+
+    if (empty($data["end_at"])) {
+        $endDate = 'aujourd\'hui';
+    } else {
+        $endDate = strftime("%B %G", strtotime($data['end_at']));
+    }
+
+    return '<div class="card-round">
+                <div class="date">' . $startDate . ' <span>à</span> ' . $endDate . '</div>
+                <div class="card-detail">
+                    <div class="title-detail">
+                        <h3 >' . $data['society'] . '</h3>
+                    </div>
+                    <div class="job-detail">
+                        <p>' . $data['job'] . '</p>
+                    </div>
+                    <div class="body-detail">
+                        <p>' . $data['detail'] . '</p>
+                    </div>
+                </div>
+            </div>';
+}

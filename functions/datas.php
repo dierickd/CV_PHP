@@ -37,3 +37,30 @@ $projects = [
         'techno' => 'HTML CSS'
     ],
 ];
+
+$experiences = [
+    [
+        'society' => 'Securitas',
+        'job' => 'Agent de sécurité chef de poste',
+        'detail' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nulla, perferendis possimus similique temporibus velit veniam. Aliquid animi, architecto distinctio dolorem enim eum harum impedit molestias porro provident quas voluptatum?',
+        'start_at' => '2013-04-08',
+        'end_at' => '',
+    ],
+];
+
+$training = [
+    [
+        'society' => 'Wild Code School',
+        'job' => 'Develeppeur web PHP/Symfony',
+        'detail' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nulla, perferendis possimus similique temporibus velit veniam. Aliquid animi, architecto distinctio dolorem enim eum harum impedit molestias porro provident quas voluptatum?',
+        'start_at' => '2020-03-02',
+        'end_at' => '',
+    ],
+    [
+        'society' => 'OpenClassRooms',
+        'job' => 'Develeppeur web junior',
+        'detail' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nulla, perferendis possimus similique temporibus velit veniam. Aliquid animi, architecto distinctio dolorem enim eum harum impedit molestias porro provident quas voluptatum?',
+        'start_at' => '2018-03-01',
+        'end_at' => '2017-09-01',
+    ],
+];

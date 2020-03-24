@@ -8,6 +8,7 @@
 
     --color_dark_hover: rgb(52, 57, 69);
     --color_transparent: rgba(19, 141, 223, 0.6);
+    --color_light_transparent: rgba(245, 242, 242, .6);
     --shadow: 0 0 3px;
 
     --font_family: 'Prompt';
@@ -25,5 +26,6 @@
     --radius: 3px;
     --radius-hard: 50%;
     --padding-light: 25px;
+    --padding-medium: 55px;
     --padding-XL: 80px;
 }

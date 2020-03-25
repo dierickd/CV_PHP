@@ -23,6 +23,7 @@
     --opacity_strong: 75%;
 
     --letter_spacing: .25rem;
+    --letter_spacing-light: calc(.25rem / 2);
     --radius: 3px;
     --radius-hard: 50%;
     --padding-light: 25px;

@@ -1,0 +1,31 @@
+.contact {
+    background: var(--color_dark);
+    color: var(--color_light);
+    padding: var(--padding-XL);
+}
+.contact h3 {
+    color: var(--color_pseudo);
+    font-size: var(--font_L);
+    text-transform: uppercase;
+    letter-spacing: var(--letter_spacing-light);
+}
+.main-contact {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact ul {
+    margin: 0;
+    padding: 0;
+}
+.contact ul li {
+    list-style: none;
+    line-height: 30px;
+    color: var(--color_light_transparent);
+}
+.contact .fas, .contact .far {
+    color: var(--color_light_transparent);
+    margin-right: 5px;
+    width: 20px;
+    text-align: center;
+}

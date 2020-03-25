@@ -1,52 +1,24 @@
 <?php
 
-function cardSkills(string $links, string $nameSkill):string
+
+function dateConvert(string $start, string $end):array
 {
-    return '<figure class="card">
-                <img class="card-img" src="' . $links . '" alt="' . $nameSkill . '">
-                <figcaption class="card-title">' . $nameSkill . '</figcaption>
-            </figure>';
+    (empty($end)) ? $end_at = 'aujourd\'hui' : $end_at = strftime("%B %G", strtotime($end));
+    setlocale(LC_ALL, 'fr_FR.utf-8');
+    return [strftime('%B %Y', strtotime($start)), $end_at];
 }
 
-function portfolio(string $link, string $name, string $file, string $techno):string
+function contact(array $data):string
 {
-    return '<div class="card-project">
-                    <img class="card-project-img" src="../img/' . $file . '" alt="' . $name . '">
-                    <div class="card-project-footer">
-                        <span class="name-site">' . $name . '</span>
-                        <span>' . $techno . '</span>
-                        <a href="' . $link . '" target="_blank">Voir le site</a>
-                    </div>
-                <a href="' . $link . '" target="_blank" class="hover">
-                    ' . $name . '
-                    <span>' . $techno . '</span>
-                </a>
-            </div>';
-}
+    $today = new DateTime();
+    $birthday = new DateTime($data['birthday']);
+    $age = $today->diff($birthday)->y;
+    $data['vehicle'] === true ? $vehicle ='Véhiculé' : $vehicle ='Non véhiculé';
 
-function cardRectangleWithRound(array $data):string
-{
-    setlocale(LC_TIME,'fr_FR');
-    $startDate = strftime("%B %G", strtotime($data['start_at']));
-
-    if (empty($data["end_at"])) {
-        $endDate = 'aujourd\'hui';
-    } else {
-        $endDate = strftime("%B %G", strtotime($data['end_at']));
-    }
-
-    return '<div class="card-round">
-                <div class="date">' . $startDate . ' <span>à</span> ' . $endDate . '</div>
-                <div class="card-detail">
-                    <div class="title-detail">
-                        <h3 >' . $data['society'] . '</h3>
-                    </div>
-                    <div class="job-detail">
-                        <p>' . $data['job'] . '</p>
-                    </div>
-                    <div class="body-detail">
-                        <p>' . $data['detail'] . '</p>
-                    </div>
-                </div>
-            </div>';
+    return '<ul class="contact-group">
+                <li class="item-contact"><i class="fas fa-map-marker-alt"></i>' . $data['city'] . ', ' . $data['country'] . '</li>
+                <li class="item-contact"><i class="fas fa-check"></i>' . $age . ' ans - ' . $vehicle .'</li>
+                <li class="item-contact"><i class="fas fa-mobile-alt"></i>' . $data['phone'] . '</li>
+                <li class="item-contact"><i class="far fa-envelope"></i>' . $data['email'] . '</li>
+            </ul>';
 }

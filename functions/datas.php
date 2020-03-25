@@ -64,3 +64,23 @@ $training = [
         'end_at' => '2017-09-01',
     ],
 ];
+
+$contact = [
+    'city' => 'Orléans',
+    'country' => 'France',
+    'birthday' => '1979-09-01',
+    'email' => 'contact@dierick-dewi.fr',
+    'phone' => '06.64.94.91.43',
+    'vehicle' => true,
+];
+
+$icons = [
+    'HTML5' => 'https://icongr.am/devicon/html5-original.svg',
+    'CSS3' => 'https://icongr.am/devicon/css3-original.svg',
+    'PHP' => 'https://icongr.am/devicon/php-original.svg',
+    'MySQL' => 'https://icongr.am/devicon/mysql-original.svg',
+    'SASS' => 'https://icongr.am/devicon/sass-original.svg',
+    'JavaScript' => 'https://icongr.am/devicon/javascript-original.svg',
+    'GitHub' => 'https://icongr.am/devicon/github-original.svg',
+    'Bootstrap' => 'https://icongr.am/devicon/bootstrap-plain.svg',
+];

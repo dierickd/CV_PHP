@@ -1,4 +1,4 @@
-<header>
+<header class="header">
     <div class="name_presentation">
         <h1>
             DIERICK Déwi

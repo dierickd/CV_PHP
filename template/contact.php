@@ -1,5 +1,7 @@
 <?php
 $age = age($contact['birthday']);
+
+
 ?>
 
 <section class="section contact" id="contact">
@@ -22,7 +24,7 @@ $age = age($contact['birthday']);
         </div>
         <div class="contact-me">
             <h3>Me contacter</h3>
-            <form action="" method="post">
+            <form action="../functions/send.php" method="POST">
                 <div class="form-group">
                     <div class="item-group">
                         <label for="name">Nom</label>

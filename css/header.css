@@ -1,4 +1,4 @@
-header {
+.header {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -26,7 +26,7 @@ header {
     display: block;
     font-size: var(--font_L);
 }
-header .swipe {
+.header .swipe {
     position: absolute;
     opacity: 0;
     bottom: 70px;
@@ -34,7 +34,7 @@ header .swipe {
     height: 49px;
     animation: 2s linear .5s infinite callToSwipe;
 }
-header .mouse {
+.header .mouse {
     position: absolute;
     overflow: hidden;
     display: flex;
@@ -49,24 +49,24 @@ header .mouse {
     height: 49px;
     border-radius: 40% 40% 25% 25%;
 }
-header .mouse::before {
+.header .mouse::before {
     content: '';
     display: block;
     width: 2px;
     height: 20px;
     background: var(--color_light);
 }
-header .mouse .fas {
+.header .mouse .fas {
     transform: translateY(-400%);
     margin-bottom: -7px;
     animation: 2s linear .5s infinite callToScroll;
 }
-header .scroll {
+.header .scroll {
     position: absolute;
     bottom: 50px;
     color: var(--color_light);
 }
-header .swipe {
+.header .swipe {
     display: none;
 }
 @keyframes callToScroll {
@@ -108,10 +108,10 @@ header .swipe {
         display: block;
         font-size: var(--font_main);
     }
-    header .mouse {
+    .header .mouse {
         display: none;
     }
-    header .swipe {
+    .header .swipe {
         display: block;
     }
 }

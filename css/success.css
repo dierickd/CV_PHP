@@ -1,0 +1,49 @@
+@import "style.css";
+
+
+.jumbotron {
+    background: var(--color_success);
+    padding: var(--padding-medium);
+    color: var(--color_light);
+}
+.container {
+    margin: 25px auto;
+    max-width: 1200px;
+    padding: var(--padding);
+}
+.main {
+    margin-top: var(--padding-XL);
+    margin-bottom: var(--padding-XL);
+}
+.btn-return {
+    text-align: right;
+    margin-top: var(--padding-XL);
+}
+.btn-return a {
+    background: none;
+    border: 1px solid var(--color_main);
+    border-radius: var(--radius);
+    padding: var(--padding) var(--padding-light);
+    color: var(--color_main);
+    transition: all .3s ease;
+}
+.btn-return a:hover {
+    background: var(--color_main);
+    color: var(--color_light);
+}
+.main .message {
+    border-left: 5px solid var(--color_main);
+    padding-left: var(--padding-light);
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    margin-top: var(--padding-medium);
+}
+
+@media screen and (max-width: 700px) {
+    .jumbotron {
+        padding: var(--padding);
+    }
+    .btn-return {
+        text-align: center;
+    }
+}

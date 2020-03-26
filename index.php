@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'functions/datas.php';
 include 'functions/functions.php';
 ?>

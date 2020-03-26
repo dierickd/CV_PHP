@@ -94,6 +94,14 @@ form input, form textarea {
     max-width: 50px;
 }
 
+.contact .error {
+    background: var(--color_main);
+    padding-left: var(--padding);
+    color: var(--color_danger);
+    font-size: .9em;
+    font-style: italic;
+}
+
 @media screen and (max-width: 960px) {
     .contact-me .form-group {
         flex-direction: column;

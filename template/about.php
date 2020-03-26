@@ -4,7 +4,7 @@
     <div class="picture-profile">
         <figure>
             <figcaption></figcaption>
-            <img src="../img/me.jpg" alt="Photo de Dierick Déwi">
+            <img src="../img/me2.png" alt="Photo de Dierick Déwi">
         </figure>
     </div>
     <div class="details-profile">
@@ -18,7 +18,7 @@
         </div>
         <div class="social-icon">
             <?php for ($i=0; $i < count($iconsSocial); $i++): ?>
-            <a href="<?= $iconsSocial[$i]['link'] ?>" title="Accéder à <?= $iconsSocial[$i]['name'] ?>"><img src="<?= $iconsSocial[$i]['icon'] ?>" alt="<?= $iconsSocial[$i]['name'] ?>"></a>
+                <a href="<?= $iconsSocial[$i]['link'] ?>" title="Accéder à <?= $iconsSocial[$i]['name'] ?>"><?= $iconsSocial[$i]['icon'] ?></a>
             <?php endfor; ?>
         </div>
     </div>

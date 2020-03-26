@@ -16,13 +16,13 @@ $age = age($contact['birthday']);
             </div>
             <div class="social-icon">
                 <?php for ($i=0; $i < count($iconsSocial); $i++): ?>
-                    <a href="<?= $iconsSocial[$i]['link'] ?>" title="Accéder à <?= $iconsSocial[$i]['name'] ?>"><img src="<?= $iconsSocial[$i]['icon'] ?>" alt="<?= $iconsSocial[$i]['name'] ?>"></a>
+                    <a href="<?= $iconsSocial[$i]['link'] ?>" title="Accéder à <?= $iconsSocial[$i]['name'] ?>"><?= $iconsSocial[$i]['icon'] ?></a>
                 <?php endfor; ?>
             </div>
         </div>
         <div class="contact-me">
             <h3>Me contacter</h3>
-            <form novalidate action="../functions/send.php" method="POST">
+            <form action="../functions/send.php" method="POST">
                 <div class="form-group">
                     <div class="item-group">
                         <label for="name">Nom</label>

@@ -90,8 +90,12 @@ form input, form textarea {
     flex-direction: row;
     margin-top: var(--padding-medium);
 }
-.contact .social-icon img {
-    max-width: 50px;
+.contact .social-icon a {
+    background: transparent;
+    color: inherit;
+    font-size: .65em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .contact .error {
@@ -109,6 +113,9 @@ form input, form textarea {
     .contact-me {
         margin-left: var(--padding-medium);
     }
+    .contact .social-icon a {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -125,7 +132,7 @@ form input, form textarea {
     .contact-detail {
         margin-top: var(--padding-medium);
     }
-    .contact .social-icon {
+    .contact .social-icon{
         justify-content: center;
     }
 }

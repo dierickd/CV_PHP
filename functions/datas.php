@@ -93,21 +93,21 @@ $iconsSocial = [
     [
         'name' => 'linkedin',
         'link' => '',
-        'icon' => 'https://icongr.am/devicon/linkedin-original.svg',
+        'icon' => '<i class="fab fa-linkedin-in"></i>',
     ],
     [
         'name' => 'twitter',
         'link' => '',
-        'icon' => 'https://icongr.am/devicon/twitter-original.svg',
+        'icon' => '<i class="fab fa-twitter"></i>',
     ],
     [
         'name' => 'github',
         'link' => '',
-        'icon' => 'https://icongr.am/devicon/github-original.svg',
+        'icon' => '<i class="fab fa-github"></i>',
     ],
     [
         'name' => 'email',
         'link' => '#contact',
-        'icon' => 'https://icongr.am/fontawesome/envelope-o.svg',
+        'icon' => '<i class="fas fa-envelope"></i>',
     ],
 ];

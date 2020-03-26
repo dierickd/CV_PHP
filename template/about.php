@@ -17,10 +17,9 @@
             </p>
         </div>
         <div class="social-icon">
-            <a href="#" title="Accéder au profile Linkedin"><img src="https://icongr.am/devicon/linkedin-original.svg" alt="linkedin"></a>
-            <a href="#" title="Accéder au profile twitter"><img src="https://icongr.am/devicon/twitter-original.svg" alt="twitter"></a>
-            <a href="#" title="Accéder au profile github"><img src="https://icongr.am/devicon/github-original.svg" alt="github"></a>
-            <a href="#" title="Envoyer un Email"><img src="https://icongr.am/fontawesome/envelope-o.svg" alt="Email"></a>
+            <?php for ($i=0; $i < count($iconsSocial); $i++): ?>
+            <a href="<?= $iconsSocial[$i]['link'] ?>" title="Accéder à <?= $iconsSocial[$i]['name'] ?>"><img src="<?= $iconsSocial[$i]['icon'] ?>" alt="<?= $iconsSocial[$i]['name'] ?>"></a>
+            <?php endfor; ?>
         </div>
     </div>
 </section>

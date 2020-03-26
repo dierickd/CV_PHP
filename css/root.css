@@ -5,6 +5,7 @@
     --color_dark: rgb(38, 43, 55);
     --color_light: rgba(245, 242, 242, .8);
     --color_pseudo: #E3DFDF;
+    --color_dark_light: #475167;
 
     --color_dark_hover: rgb(52, 57, 69);
     --color_transparent: rgba(19, 141, 223, 0.6);
@@ -26,6 +27,8 @@
     --letter_spacing-light: calc(.25rem / 2);
     --radius: 3px;
     --radius-hard: 50%;
+
+    --padding: 15px;
     --padding-light: 25px;
     --padding-medium: 55px;
     --padding-XL: 80px;

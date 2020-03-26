@@ -1,7 +1,7 @@
 .contact {
     background: var(--color_dark);
     color: var(--color_light);
-    padding: var(--padding-XL);
+    padding: var(--padding-XL) var(--padding-medium);
 }
 .contact h3 {
     color: var(--color_pseudo);
@@ -10,9 +10,11 @@
     letter-spacing: var(--letter_spacing-light);
 }
 .main-contact {
-    max-width: 1024px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-around;
 }
 .contact ul {
     margin: 0;
@@ -28,4 +30,87 @@
     margin-right: 5px;
     width: 20px;
     text-align: center;
+}
+form label {
+    color: var(--color_light_transparent);
+}
+form input {
+    height: 50px;
+}
+form input:focus, form textarea:focus {
+    border: 1px solid var(--color_light_transparent);
+}
+form input, form textarea {
+    width: 100%;
+    padding: var(--padding);
+    padding-left: var(--padding-light);
+    margin-top: 5px;
+    background: var(--color_dark_light);
+    border: none;
+    font-style: italic;
+    color: var(--color_light_transparent);
+}
+.contact-me .form-group .item-group:first-child {
+    margin-right: var(--padding);
+}
+.contact-me .item-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+.contact-me .form-group {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me {
+    width: 100%;
+    max-width: 700px;
+}
+.btn-submit {
+    text-align: right;
+    margin-top: var(--padding-light);
+}
+.btn-submit button {
+    padding: .65em 2.75em;
+    background: var(--color_main);
+    color: var(--color_dark_light);
+    border: none;
+    cursor: pointer;
+}
+.contact .social-icon {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--padding-medium);
+}
+.contact .social-icon img {
+    max-width: 50px;
+}
+
+@media screen and (max-width: 960px) {
+    .contact-me .form-group {
+        flex-direction: column;
+    }
+    .contact-me {
+        margin-left: var(--padding-medium);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .main-contact {
+        flex-direction: column-reverse;
+    }
+    .contact-me {
+        margin-left: 0;
+    }
+    .contact-me .form-group {
+        flex-direction: column;
+    }
+    .contact-detail {
+        margin-top: var(--padding-medium);
+    }
+    .contact .social-icon {
+        justify-content: center;
+    }
 }

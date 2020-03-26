@@ -70,8 +70,12 @@ $contact = [
     'country' => 'France',
     'birthday' => '1979-09-01',
     'email' => 'contact@dierick-dewi.fr',
+    'iconCheck' => '<i class="fas fa-check"></i>',
     'phone' => '06.64.94.91.43',
-    'vehicle' => true,
+    'vehicle' => 'véhiculé',
+    'iconCity' => '<i class="fas fa-map-marker-alt"></i>',
+    'iconEmail' => '<i class="far fa-envelope"></i>',
+    'iconPhone' => '<i class="fas fa-mobile-alt"></i>',
 ];
 
 $icons = [
@@ -83,4 +87,27 @@ $icons = [
     'JavaScript' => 'https://icongr.am/devicon/javascript-original.svg',
     'GitHub' => 'https://icongr.am/devicon/github-original.svg',
     'Bootstrap' => 'https://icongr.am/devicon/bootstrap-plain.svg',
+];
+
+$iconsSocial = [
+    [
+        'name' => 'linkedin',
+        'link' => '',
+        'icon' => 'https://icongr.am/devicon/linkedin-original.svg',
+    ],
+    [
+        'name' => 'twitter',
+        'link' => '',
+        'icon' => 'https://icongr.am/devicon/twitter-original.svg',
+    ],
+    [
+        'name' => 'github',
+        'link' => '',
+        'icon' => 'https://icongr.am/devicon/github-original.svg',
+    ],
+    [
+        'name' => 'email',
+        'link' => '#contact',
+        'icon' => 'https://icongr.am/fontawesome/envelope-o.svg',
+    ],
 ];

@@ -1,4 +1,5 @@
 <?php
+$countProjects = count($projects);
 ?>
 
 <section class="section portfolio" id="portfolio">
@@ -6,7 +7,8 @@
     <div class="projects">
         <?php for ($i=0; $i < count($projects); $i++): ?>
             <div class="card-project">
-                <img class="card-project-img" src="../img/<?= $projects[$i]['file'] ?> " alt=" <?= $projects[$i]['name'] ?> ">
+                <img class="card-project-img" src="../assets/img/<?= $projects[$i]['filename'] ?> " alt=" <?=
+                $projects[$i]['name'] ?> ">
                 <div class="card-project-footer">
                     <span class="name-site"> <?= $projects[$i]['name'] ?> </span>
                     <span> <?= $projects[$i]['techno'] ?> </span>

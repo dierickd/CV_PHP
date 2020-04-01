@@ -1,5 +1,5 @@
 <?php
-
+$count = count($experiences);
 ?>
 <section class="section experiences" id="experiences">
     <h2 class="title_section">
@@ -7,7 +7,7 @@
     </h2>
 
     <div class="main-experiences">
-        <?php for ($i = 0; $i < count($experiences); $i++): ?>
+        <?php for ($i = 0; $i < $count; $i++): ?>
             <?php $date = dateConvert($experiences[$i]['start_at'], $experiences[$i]['end_at']) ?>
             <div class="card-round">
                 <div class="date"><?= ucfirst($date[0]) ?><span>à</span><?= $date[1] ?></div>

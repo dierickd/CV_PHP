@@ -1,5 +1,6 @@
 <?php
-$age = age($contact['birthday']);
+$age = age($about['birthday_at']);
+if ($about['mobility']) {$mobility = 'Véhiculé';} else {$mobility = 'Non véhiculé';}
 ?>
 
 <section class="section contact" id="contact">
@@ -8,21 +9,25 @@ $age = age($contact['birthday']);
             <h3>details</h3>
             <div class="content-details">
                 <ul class="contact-group">
-                    <li class="item-contact"><?= $contact['iconCity'] . $contact['city'] . ', ' . $contact['country'] ?></li>
-                    <li class="item-contact"><?= $contact['iconCheck'] . $age . ' ans - ' . $contact['vehicle'] ?></li>
-                    <li class="item-contact"><?= $contact['iconPhone'] . $contact['phone'] ?></li>
-                    <li class="item-contact"><?= $contact['iconEmail'] . $contact['email'] ?></li>
+                    <li class="item-contact"><i class="fas fa-map-marker-alt"></i><?= $about['city'] . ', ' .
+                        $about['country']
+                       ?></li>
+                    <li class="item-contact"><i class="fas fa-check"></i><?= $age . ' ans - ' . $mobility
+                       ?></li>
+                    <li class="item-contact"><i class="fas fa-mobile-alt"></i><?= $about['phone'] ?></li>
+                    <li class="item-contact"><i class="far fa-envelope"></i><?= $about['email'] ?></li>
                 </ul>
             </div>
             <div class="social-icon">
-                <?php for ($i=0; $i < count($iconsSocial); $i++): ?>
-                    <a href="<?= $iconsSocial[$i]['link'] ?>" title="Accéder à <?= $iconsSocial[$i]['name'] ?>"><?= $iconsSocial[$i]['icon'] ?></a>
+                <?php for ($i=0; $i < $countSocial; $i++): ?>
+                    <a href="<?= $social[$i]['link'] ?>" title="Accéder à <?= $social[$i]['name'] ?>"><?=
+                       $social[$i]['icon'] ?></a>
                 <?php endfor; ?>
             </div>
         </div>
         <div class="contact-me">
             <h3>Me contacter</h3>
-            <form action="../functions/send.php" method="POST">
+            <form action="../traitement/send.php" method="POST">
                 <div class="form-group">
                     <div class="item-group">
                         <label for="name">Nom</label>

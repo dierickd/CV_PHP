@@ -1,0 +1,47 @@
+@import "../root.css";
+
+/*
+General declaration
+ */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--font_family);
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+}
+
+
+.jumbotron {
+    background: var(--color_main);
+    padding: var(--padding-medium);
+    color: var(--color_dark_light);
+}
+.jumbotron h1 {
+    text-transform: uppercase;
+}
+.jumbotron a {
+    font-size: .90em;
+    font-style: italic;
+}
+
+/*
+Custom title Section
+ */
+@media screen and (max-width: 700px) {
+    .section {
+        padding: var(--padding-light);
+    }
+}

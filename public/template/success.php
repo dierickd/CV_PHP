@@ -12,7 +12,7 @@ if (!$_SESSION) {
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../css/success.css">
+    <link rel="stylesheet" href="../assets/css/success.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,7 +32,7 @@ if (!$_SESSION) {
             <?= $_SESSION['mail']['message'] ?>
         </p>
         <div class="btn-return">
-            <a href="../index.php" title="Retour vers la page d'accueil">Retour vers la page d'accueil</a>
+            <a href="../" title="Retour vers la page d'accueil">Retour vers la page d'accueil</a>
         </div>
     </div>
 </body>
